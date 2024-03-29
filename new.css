@@ -1,105 +1,77 @@
-* {
-    font-family: Lato, sans-serif;
-    color: white;
+body {
+	overflow: hidden;
   }
   
-  body {
-    margin: 0;
-    background-color: rgb(50, 62, 73);
+  .imageGrid {
+	line-height: 0;
+	width: 100%; /* Ensure the grid fills the entire width of its container */
+	display: flex; /* Use flexbox for layout */
+	flex-wrap: wrap; /* Allow tiles to wrap to the next line if necessary */
   }
   
-  header {
-    width: 100%;
-    height: 50px;
-    max-height: 20vh;
-    background-color: #191919;
-    padding: 10px;
+  .imageGrid .tile {
+	width: calc(20.33% - 24px); /* Adjust width to include margins */
+	min-height: 20em;
+	line-height: 1.2;
+	margin: 12px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-family: "Verdana", sans-serif;
+	text-shadow: 2px 2px 2px #000;
+	cursor: pointer;
+	cursor: hand;
+	padding-right: 50px;
   }
   
-  .NavBar_Container {
-    display: flex;
-    flex-direction: column; /* Change direction to column for mobile */
-    align-items: center; /* Center content horizontally */
+  .imageGrid .tile:before {
+	content: '';
+	background-color: rgba(15, 15, 15, 0.5);
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
   }
   
-  .Logo_Container {
-    display: flex;
-    justify-content: center; /* Center logo horizontally */
-    margin-bottom: 20px; /* Add some space below the logo */
+  .imageGrid .tile:hover:before {
+	display: none;
   }
   
-  .nav-logo {
-    width: 50px;
+  .imageGrid .tile .textWrapper {
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: .75em;
   }
   
-  .nav-header {
-    text-decoration: none;
+  .imageGrid .tile .textWrapper .content {
+	display: none;
   }
   
-  .NavLink_Container {
-    display: flex;
-    flex-direction: column; /* Change direction to column for mobile */
-    align-items: center; /* Center content horizontally */
+  .imageGrid .tile:hover .textWrapper .content {
+	display: block;
   }
   
-  .NavLink_Container a {
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
+  .imageGrid .tile:hover .textWrapper .content h2 {
+	margin: 0;
   }
   
-  .NavLink_Container a:hover {
-    color: gray;
+  @media (max-width: 1000px) {
+	.imageGrid .tile {
+	  width: calc(50% - 24px); /* Adjust width for smaller screens */
+	}
   }
   
-  .section {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .slider-wrapper {
-    position: relative;
-    max-width: 100%; /* Adjust slider width to fit smaller screens */
-    margin: 0 auto;
-  }
-  
-  .slider {
-    display: flex;
-    flex-direction: column; /* Change direction to column for mobile */
-  }
-  
-  .slider img {
-    width: 100%; /* Ensure images fill the slider container */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  .slider-nav {
-    display: flex;
-    justify-content: center; /* Center navigation horizontally */
-    margin-top: 20px; /* Add space above navigation */
-  }
-  
-  .slider-nav a {
-    width: 10px; /* Adjust size of navigation dots for mobile */
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-    margin: 0 5px; /* Add space between navigation dots */
-  }
-  
-  .container {
-    padding: 2rem;
-  }
-  
-  .footer-icons {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Add space above footer icons */
-  }
-  
-  .footer-icons i {
-    margin: 0 10px;
+  @media (max-width: 700px) {
+	.imageGrid .tile {
+	  width: calc(100% - 24px); /* Adjust width for even smaller screens */
+	}
   }

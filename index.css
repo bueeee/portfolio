@@ -137,11 +137,15 @@ header {
 
 .para {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   padding-left: 15px;
 }
 h2 {
   display: flex;
   justify-content: center;
   margin: 0;
+}
+footer {
+ padding-top: 15px;
+
 }
