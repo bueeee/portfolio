@@ -1,96 +1,81 @@
-* {
-    font-family: Lato, sans-serif;
-    color: white;
-  }
-  *{
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-  }
-  :root {
-    --feldgrau: #3c493fff;
-    --battleship-gray: #7e8d85ff;
-    --ash-gray: #b3bfb8ff;
-    --mint-cream: #f0f7f4ff;
-    --celadon: #a2e3c4ff;
-    --blue1: #d2f7fe;
-    --blue2: #94d0e1;
-    --greentea: #E4F1F0;
-  }
-  body {
-      margin: 0px;
-      background-color: var(--greentea);
+body {
+	overflow: hidden;
   }
   
-  header {
-   width: 100%;
-   height: 50px;
-   max-height: 20vh;
-   background-color: var(--blue1);
-   padding: 10px;
-  
+  .imageGrid {
+	line-height: 0;
+	width: 100%; /* Ensure the grid fills the entire width of its container */
+	display: flex; /* Use flexbox for layout */
+	flex-wrap: wrap; /* Allow tiles to wrap to the next line if necessary */
+	justify-content: center;
   }
   
-  .NavBar_Container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-  
+  .imageGrid .tile {
+	width: calc(20.33% - 24px); /* Adjust width to include margins */
+	min-height: 20em;
+	line-height: 1.2;
+	margin: 12px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-family: "Verdana", sans-serif;
+	text-shadow: 2px 2px 2px #000;
+	cursor: pointer;
+	cursor: hand;
+	padding-right: 10px;
+	border-radius: 2rem;
+
+	
   }
   
-  .Logo_Container {
-      display: flex;
-      flex-direction: row;
-      padding-right: 400px;
+  .imageGrid .tile:before {
+	content: '';
+	background-color: rgba(15, 15, 15, 0.5);
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
   }
   
-  .nav-logo {
-      width: 50px;
-      padding-right: 20px;
+  .imageGrid .tile:hover:before {
+	display: none;
   }
   
-  .nav-header {
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  .imageGrid .tile .textWrapper {
+	text-align: center;
+	vertical-align: middle;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: .75em;
   }
   
-  .NavLink_Container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+  .imageGrid .tile .textWrapper .content {
+	display: none;
   }
   
-  .NavLink_Container a {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 10px;
-      text-decoration: none;
-      font-weight: bold;
+  .imageGrid .tile:hover .textWrapper .content {
+	display: block;
   }
   
-  .NavLink_Container a:hover {
-      color: rgb(168, 225, 235);
-    }
-  
-  .section{
-    display: flex;
-    justify-content: center;
-  }
-  .container {
-    padding: 2rem;
-    display: flex;
-    justify-content: f;
-  }
-  .footer-icons {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-   
+  .imageGrid .tile:hover .textWrapper .content h2 {
+	margin: 0;
   }
   
-  .footer-icons i {
-    margin: 0 10px;
+  @media (max-width: 1000px) {
+	.imageGrid .tile {
+	  width: calc(50% - 24px); /* Adjust width for smaller screens */
+	}
   }
   
+  @media (max-width: 700px) {
+	.imageGrid .tile {
+	  width: calc(100% - 24px); /* Adjust width for even smaller screens */
+	}
+  }
