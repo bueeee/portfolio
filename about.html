@@ -1,52 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="about.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/github?f=brands&s=solid">
-    
-    
-
-
-    
 </head>
 
 <body>
-    <header>
-        
-        <nav>
-            <div class="nav-logo">
-                <a href="#">
-                    <img src="assets/logo2.png" alt="Logo" class="nav-logo">
-                </a>
-            </div>
-          <a href="/index.html"> Home</a>
-          <a href="/about.html">About</a>
-          <a href="skills.html">Skills</a>
-          <a href="/projects.html">Projects</a>
-          <a href="/contact.html">Contact</a>
-          <div class="nav-logo">
-           
-          </div>
-       
-        </nav>
-      </header>
-<main>
 
-    </section>  
-    <h1>About me</h1>
-        <p>As I embarked on my journey into the world of programming, I felt a mix of excitement, curiosity, and perhaps a touch of apprehension.  </p>
-        <img src="assets/gif33.gif" alt="giffunny" class="giffunny">
-        <h2>Hobbies</h2>
-        <p>
-            Engaging in hobbies brings me immense joy and fulfillment. From strumming guitar chords to capturing moments through photography, each activity offers a unique avenue for self-expression and relaxation. Whether it's painting, knitting, reading, or exploring nature, my hobbies allow me to unwind, learn, and create lasting memories.</p>
-        
-
+<header class="NavBar_Container">
+    <div class="Logo_Container">
+        <a href="home.html">
+            <img src="assets/logo2.png" alt="Logo" class="nav-logo">
+        </a>
+        <a href="index.html" class="nav-header">
+            <h1>Tin's Portfolio</h1>
+        </a>
     </div>
-</main>
+    <div class="NavLink_Container">
+        <a href="/home.html"> Home</a>
+        <a href="/About.html">About</a>
+        <a href="/Projects.html">Projects</a>
+        <a href="/contact.html">Contact</a>
+    </div>
+</header>
+<h2>About</h2>
+<section class="container">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <img id="slide-1" src="assets/hiking1.jpeg"/>
+            <img id="slide-2" src="assets/hiking2.jpeg"/>
+            <img id="slide-3" src="assets/hiking3.jpeg"/>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        </div>
+    </div>
+ 
+</section>
+<h2>Hobbies</h2>
+<div class="para">
+    Hiking: Lace up your boots and hit the trails—hiking is an exhilarating outdoor adventure that connects enthusiasts with nature's beauty and serenity. With each step, hikers explore winding paths, conquer rugged terrain, and discover hidden wonders, from cascading waterfalls to panoramic vistas, all while embracing the invigorating challenge of the great outdoors.
+</div>
+
 <footer>
     <div class="footer-icons">
         <a href="https://github.com/bueeee">
@@ -56,10 +57,7 @@
             <i class="fab fa-linkedin"></i>
         </a>
     </div>
-    
 </footer>
 
-
 </body>
-
 </html>
