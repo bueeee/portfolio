@@ -33,7 +33,7 @@ header {
   color: black;
   position: fixed;
   top: 0;
-  z-index: 999;
+
 }
 
 .NavBar_Container {
@@ -66,6 +66,7 @@ header {
   justify-content: center;
   color: black;
   max-width: 100px;
+  z-index: 1000;
 }
 
 .NavLink_Container a {
@@ -80,7 +81,6 @@ header {
 
 .NavLink_Container a:hover {
   color: rgb(168, 225, 235);
-  
 }
 
 .footer-icons {
@@ -131,8 +131,10 @@ h1 {
 .main-header {
   display: flex;
   align-items: center;
-  height: 100vh;
   margin-left: 5em;
-  z-index: 1000;
-
+  z-index: 50;
+  position: fixed; /* Change to fixed positioning */
+  top: 40%; /* Position it at the top of the viewport */
+  left: 0; /* Position it at the left of the viewport */
+  margin-bottom: 40px;
 }

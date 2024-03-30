@@ -58,6 +58,7 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: .75em;
+	color: #e5e5e5;
   }
 
   
@@ -72,6 +73,9 @@ body {
   .imageGrid .tile:hover .textWrapper .content h2 {
 	margin: 0;
   }
+  h2 {
+	  color: #e5e5e5;
+  }
   
   @media (max-width: 1000px) {
 	.imageGrid .tile {
@@ -84,4 +88,3 @@ body {
 	  width: calc(100% - 24px); /* Adjust width for even smaller screens */
 	}
   }
-  @media 
