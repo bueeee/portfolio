@@ -1,134 +1,138 @@
 * {
-    font-family: Lato, sans-serif;
-  }
+  font-family: Lato, sans-serif;
+}
+
+* {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+:root {
+  --feldgrau: #3c493fff;
+  --battleship-gray: #7e8d85ff;
+  --ash-gray: #b3bfb8ff;
+  --mint-cream: #f0f7f4ff;
+  --celadon: #a2e3c4ff;
+  --blue1: #d2f7fe;
+  --blue2: #94d0e1;
+  --greentea: #e4f1f0;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  max-height: 20vh;
+  background-color: var(--blue1);
+  padding: 10px;
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.NavBar_Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Logo_Container {
+  display: flex;
+  flex-direction: row;
+  padding-right: 400px;
+}
+
+.nav-logo {
+  width: 50px;
+  padding-right: 20px;
+}
+
+.nav-header {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.NavLink_Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  max-width: 100px;
+}
+
+.NavLink_Container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: center;
+}
+
+.NavLink_Container a:hover {
+  color: rgb(168, 225, 235);
   
-  * {
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-  }
-  
-  :root {
-    --feldgrau: #3c493fff;
-    --battleship-gray: #7e8d85ff;
-    --ash-gray: #b3bfb8ff;
-    --mint-cream: #f0f7f4ff;
-    --celadon: #a2e3c4ff;
-    --blue1: #d2f7fe;
-    --blue2: #94d0e1;
-    --greentea: #E4F1F0;
-  }
-  
-  body {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-  }
-  
-  header {
-    width: 100%;
-    height: 50px;
-    max-height: 20vh;
-    background-color: var(--blue1);
-    padding: 10px;
-    color: black;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-  }
-  
-  .NavBar_Container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .Logo_Container {
-    display: flex;
-    flex-direction: row;
-    padding-right: 400px;
-  }
-  
-  .nav-logo {
-    width: 50px;
-    padding-right: 20px;
-  }
-  
-  .nav-header {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .NavLink_Container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: black;
-  }
-  
-  .NavLink_Container a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .NavLink_Container a:hover {
-    color: rgb(168, 225, 235);
-  }
-  
-  .footer-icons {
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-icons i {
-    margin: 0 10px;
-  }
-  
-  .para {
-    display: flex;
-    justify-content: center;
-    padding-left: 15px;
-  }
-  
-  h2 {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  }
-  
-  footer {
-    padding-top: 15px;
-  }
-  
-  .NavLink_Container a {
-    color: black;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  h1 {
-    color: black;
-  }
-  
-  .vanta-container {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%; /* Set width to cover the entire viewport */
-    height: 100%; /* Set height to cover the entire viewport */
-    z-index: -1;
-  }
-  
-  .main-header {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    margin-left: 5em;
-    z-index: 1;
-  }
+}
+
+.footer-icons {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons i {
+  margin: 0 10px;
+}
+
+.para {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+footer {
+  padding-top: 15px;
+}
+
+.NavLink_Container a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+h1 {
+  color: black;
+}
+
+.vanta-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Set width to cover the entire viewport */
+  height: 100%; /* Set height to cover the entire viewport */
+  z-index: -1;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-left: 5em;
+  z-index: 1000;
+
+}
