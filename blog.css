@@ -1,0 +1,29 @@
+.blogphoto1 {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0.15rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 100%; 
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+
+}
+p {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 20px;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
