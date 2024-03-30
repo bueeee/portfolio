@@ -102,3 +102,8 @@
   .footer-icons i {
       margin: 0 10px;
   }
+
+  .resumelink {
+    display: flex;
+    justify-content: center;
+  }
