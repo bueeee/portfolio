@@ -1,11 +1,15 @@
+/* Global styles for all elements */
 * {
   font-family: Lato, sans-serif;
-
 }
-*{
+
+/* Additional styling for text outline */
+* {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
+
+/* Root variables for color palette */
 :root {
   --feldgrau: #3c493fff;
   --battleship-gray: #7e8d85ff;
@@ -16,40 +20,43 @@
   --blue2: #94d0e1;
   --greentea: #E4F1F0;
 }
+
+/* Body styles */
 body {
     margin: 0px;
     background-color: var(--greentea);
-    
 }
 
+/* Header styles */
 header {
  height: 50px;
  max-height: 20vh;
  background-color: var(--blue1);
  padding: 10px;
  color: black;
- 
-
 }
 
+/* Navigation bar container styles */
 .NavBar_Container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
+/* Logo container styles */
 .Logo_Container {
     display: flex;
     flex-direction: row;
     padding-right: 400px;
 }
 
+/* Logo styles */
 .nav-logo {
     width: 50px;
     padding-right: 20px;
 }
 
+/* Navigation header styles */
 .nav-header {
     text-decoration: none;
     display: flex;
@@ -57,17 +64,16 @@ header {
     justify-content: center;
 }
 
+/* Navigation link container styles */
 .NavLink_Container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     color: black;
     max-width: 100%; 
-    
-
-  
 }
 
+/* Navigation link styles */
 .NavLink_Container a {
     display: flex;
     flex-direction: column;
@@ -77,14 +83,18 @@ header {
     font-weight: bold;
 }
 
+/* Hover effect for navigation links */
 .NavLink_Container a:hover {
     color: rgb(168, 225, 235);
-  }
+}
 
+/* Main section styles */
 .section{
   display: flex;
   justify-content: center;
 }
+
+/* Slider wrapper styles */
 .slider-wrapper {
   position: relative;
   max-width: 100%; 
@@ -92,6 +102,7 @@ header {
   margin: 0 auto;
 }
 
+/* Slider styles */
 .slider {
   display: flex;
   aspect-ratio: 16 / 9;
@@ -105,6 +116,7 @@ header {
   height: auto; 
 }
 
+/* Slider image styles */
 .slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
@@ -113,6 +125,7 @@ header {
   height: auto; 
 }
 
+/* Slider navigation styles */
 .slider-nav {
   display: flex;
   column-gap: 1rem;
@@ -122,6 +135,7 @@ header {
   transform: translateX(-50%);
   z-index: 1;
 }
+
 .slider-nav a {
   width: 0.5rem;
   height: 0.5rem;
@@ -130,56 +144,70 @@ header {
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
+
 .slider-nav a:hover {
   opacity: 1;
 }
+
+/* Container styles */
 .container {
   padding: 2rem;
   display: flex;
-
-  
 }
+
+/* Footer icon styles */
 .footer-icons {
   font-size: 24px;
   display: flex;
   justify-content: center;
- 
 }
 
+/* Individual footer icon styles */
 .footer-icons i {
   margin: 0 10px;
 }
 
+/* Paragraph styles */
 .para {
   display: flex;
   justify-content: center;
   padding-left: 15px;
 }
+
+/* Heading 2 styles */
 h2 {
   display: flex;
   justify-content: center;
   margin: 0;
-
-
 }
+
+/* Footer styles */
 footer {
  padding-top: 15px;
-
 }
+
+/* Additional navigation link styles */
 .NavLink_Container a {
  color: black;
   text-decoration: none; 
   margin-right: 20px; 
 }
+
+/* Heading 1 styles */
 h1 {
   color: black;
+  display: flex;
+  justify-content: center;
 }
+
+/* Media query for hiding logo container at smaller screens */
 @media screen and (max-width: 430px) {
-  .Logo_Container
-  {
+  .Logo_Container {
     display: none;
   }
 }
+
+/* Media query for adjusting maximum width of navigation link container */
 @media screen and (max-width: 900px) {
   .NavLink_Container {
     max-width: 100%; 

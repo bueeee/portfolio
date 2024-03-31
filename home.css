@@ -1,12 +1,15 @@
+/* Global font family */
 * {
   font-family: Lato, sans-serif;
 }
 
+/* Text stroke for all elements */
 * {
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: black;
 }
 
+/* Color variables */
 :root {
   --feldgrau: #3c493fff;
   --battleship-gray: #7e8d85ff;
@@ -18,12 +21,14 @@
   --greentea: #e4f1f0;
 }
 
+/* Body styling */
 body {
   margin: 0;
   overflow: hidden;
   padding: 0;
 }
 
+/* Header styling */
 header {
   width: 100%;
   height: 50px;
@@ -33,26 +38,29 @@ header {
   color: black;
   position: fixed;
   top: 0;
-
 }
 
+/* Navigation bar container */
 .NavBar_Container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+/* Logo container */
 .Logo_Container {
   display: flex;
   flex-direction: row;
   padding-right: 400px;
 }
 
+/* Logo image */
 .nav-logo {
   width: 50px;
   padding-right: 20px;
 }
 
+/* Navigation header */
 .nav-header {
   text-decoration: none;
   display: flex;
@@ -60,6 +68,7 @@ header {
   justify-content: center;
 }
 
+/* Navigation links container */
 .NavLink_Container {
   display: flex;
   flex-direction: row;
@@ -69,6 +78,7 @@ header {
   z-index: 1000;
 }
 
+/* Navigation link styling */
 .NavLink_Container a {
   display: flex;
   flex-direction: column;
@@ -79,62 +89,72 @@ header {
   align-items: center;
 }
 
+/* Navigation link hover effect */
 .NavLink_Container a:hover {
   color: rgb(168, 225, 235);
 }
 
+/* Footer icons styling */
 .footer-icons {
   font-size: 24px;
   display: flex;
   justify-content: center;
 }
 
+/* Individual footer icon styling */
 .footer-icons i {
   margin: 0 10px;
 }
 
+/* Paragraph container styling */
 .para {
   display: flex;
   justify-content: center;
   padding-left: 15px;
 }
 
+/* Heading 2 styling */
 h2 {
   display: flex;
   justify-content: center;
   margin: 0;
 }
 
+/* Footer styling */
 footer {
   padding-top: 15px;
 }
 
+/* Additional navigation link styling */
 .NavLink_Container a {
   color: black;
   text-decoration: none;
   margin-right: 20px;
 }
 
+/* Heading 1 styling */
 h1 {
   color: black;
 }
 
+/* Vanta container styling */
 .vanta-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Set width to cover the entire viewport */
-  height: 100%; /* Set height to cover the entire viewport */
+  width: 100%; 
+  height: 100%; 
   z-index: -1;
 }
 
+/* Main header styling */
 .main-header {
   display: flex;
   align-items: center;
   margin-left: 5em;
   z-index: 50;
-  position: fixed; /* Change to fixed positioning */
-  top: 40%; /* Position it at the top of the viewport */
-  left: 0; /* Position it at the left of the viewport */
+  position: fixed;
+  top: 40%; 
+  left: 0; 
   margin-bottom: 40px;
 }

@@ -1,20 +1,21 @@
+/* Body styles */
 body {
-	overflow-y: auto; /* Enable vertical scrolling */
-	-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-  }
-  
-  .imageGrid {
-	line-height: 0;
-	width: 100%; /* Ensure the grid fills the entire width of its container */
-	display: flex; /* Use flexbox for layout */
-	flex-wrap: wrap; /* Allow tiles to wrap to the next line if necessary */
-	justify-content: center;
-	
+	overflow-y: auto; 
+	-webkit-overflow-scrolling: touch; 
+}
 
-  }
-  
-  .imageGrid .tile {
-	width: calc(20.33% - 24px); /* Adjust width to include margins */
+/* Image grid container styles */
+.imageGrid {
+	line-height: 0;
+	width: 100%;
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center;
+}
+
+/* Individual image tile styles */
+.imageGrid .tile {
+	width: calc(20.33% - 24px); 
 	min-height: 20em;
 	line-height: 1.2;
 	margin: 12px;
@@ -30,12 +31,10 @@ body {
 	cursor: hand;
 	padding-right: 10px;
 	border-radius: 2rem;
+}
 
-
-	
-  }
-  
-  .imageGrid .tile:before {
+/* Overlay effect for image tiles */
+.imageGrid .tile:before {
 	content: '';
 	background-color: rgba(15, 15, 15, 0.5);
 	display: block;
@@ -43,13 +42,15 @@ body {
 	height: 100%;
 	z-index: 0;
 	position: absolute;
-  }
-  
-  .imageGrid .tile:hover:before {
+}
+
+/* Hide overlay effect on hover */
+.imageGrid .tile:hover:before {
 	display: none;
-  }
-  
-  .imageGrid .tile .textWrapper {
+}
+
+/* Text wrapper styles for image tiles */
+.imageGrid .tile .textWrapper {
 	text-align: center;
 	vertical-align: middle;
 	width: 80%;
@@ -59,32 +60,38 @@ body {
 	transform: translate(-50%, -50%);
 	font-size: .75em;
 	color: #e5e5e5;
-  }
+}
 
-  
-  .imageGrid .tile .textWrapper .content {
+/* Hide content in text wrapper */
+.imageGrid .tile .textWrapper .content {
 	display: none;
-  }
-  
-  .imageGrid .tile:hover .textWrapper .content {
+}
+
+/* Display content in text wrapper on hover */
+.imageGrid .tile:hover .textWrapper .content {
 	display: block;
-  }
-  
-  .imageGrid .tile:hover .textWrapper .content h2 {
+}
+
+/* Heading 2 styles */
+.imageGrid .tile:hover .textWrapper .content h2 {
 	margin: 0;
-  }
-  h2 {
-	  color: #e5e5e5;
-  }
-  
-  @media (max-width: 1000px) {
+}
+
+/* Heading 2 color */
+h2 {
+	color: #e5e5e5;
+}
+
+/* Media query for adjusting tile width on smaller screens */
+@media (max-width: 1000px) {
 	.imageGrid .tile {
-	  width: calc(50% - 24px); /* Adjust width for smaller screens */
+	  width: calc(50% - 24px);
 	}
-  }
-  
-  @media (max-width: 430px) {
+}
+
+/* Media query for adjusting tile width on even smaller screens */
+@media (max-width: 430px) {
 	.imageGrid .tile {
-	  width: calc(100% - 24px); /* Adjust width for even smaller screens */
+	  width: calc(100% - 24px); 
 	}
-  }
+}

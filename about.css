@@ -1,135 +1,135 @@
+/* Define custom color variables */
 :root {
-    --feldgrau: #3c493fff;
-    --battleship-gray: #7e8d85ff;
-    --ash-gray: #b3bfb8ff;
-    --mint-cream: #f0f7f4ff;
-    --celadon: #a2e3c4ff;
-    --blue1: #d2f7fe;
-    --blue2: #94d0e1;
-  }
-  
-  
-  
-  img {
-    width: 100%;
-    display: flex;
-  }
-  a {
-    text-decoration: none;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--mint-cream);
-    text-size-adjust: 10;
-    margin: 0;
-  }
-  
-  header {
-      background-color: var(--blue1);
-      height: 15vh; /* Changed unit from 15dvh to 15vh */
-      width: 100vw; /* Changed unit from 100dvw to 100vw */
-      text-align: center;
-      display: flex;
-      flex-direction: row-reverse;
-      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    }
-    
-    main {
-        min-height: 85vh; /* Changed unit from 85dvw to 85vh */
-        width: 100vw; /* Changed unit from 100dvw to 100vw */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--mint-cream);
-        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    }
-  nav > a {
-    text-decoration: none;
-    background-color: var(rgb(156, 28, 135));
-    color: rgb(0, 0, 0);
-    padding: 0.25em;
-    border-radius: 0.53em;
-    font-size: 18px;
-  }
-  
-  nav > a:hover {
-    background-color: var(--blue2);
-  }
-  
-  nav {
-    width: 100%;
-    max-height: 0.5vh;
-    margin: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  
-  }
-  footer {
-      background-color: var(--blue1);
-      height: auto; /* Set height to auto */
-      min-height: 15vh; /* Minimum height */
-      width: 100vw;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-    }
-    
-  .nav-logo {
-    margin-right: auto; /* Pushes the logo to the left */
-  }
-  
-  .nav-logo img {
-    max-width: 50px; /* Set a maximum width for the logo */
-    height: auto; /* Maintain aspect ratio */
-  }
-  .giffunny {
-    max-width: 500px; 
-    height: auto; 
-  }
-  .container {
-    padding: 2rem;
-  }
-  
-  
-  .footer-icons {
-      font-size: 24px;
-  }
-  
-  .footer-icons i {
-      margin: 0 10px;
-  }
-
-  .resumelink {
-    display: flex;
-    justify-content: center;
-  }
-  .simple-button {
-    color: rgb(152, 228, 252);
-    border: 0;
-    font-size: 18px;
-    outline: none;
-    padding: 10px 20px; /* Adjust padding as needed */
-    background-color: #ace; /* Set your desired background color */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    text-shadow: 0 -0.056em 0 rgba(0,0,0,.3);
-    box-shadow: 0 0.22em 0 #9cb8d8, 0 0.167em 1.11em rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add smooth transition effect */
+  --feldgrau: #3c493fff;
+  --battleship-gray: #7e8d85ff;
+  --ash-gray: #b3bfb8ff;
+  --mint-cream: #f0f7f4ff;
+  --celadon: #a2e3c4ff;
+  --blue1: #d2f7fe;
+  --blue2: #94d0e1;
 }
 
+/* Set default styling for images */
+img {
+  width: 100%;
+  display: flex;
+}
+
+/* Remove underline from anchor tags */
+a {
+  text-decoration: none;
+}
+
+/* Set basic styling for the body */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mint-cream);
+  text-size-adjust: 10;
+  margin: 0;
+}
+
+/* Styling for the header */
+header {
+  background-color: var(--blue1);
+  height: 15vh; 
+  width: 100vw; 
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Styling for the main content area */
+main {
+  min-height: 85vh; 
+  width: 100vw; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--mint-cream);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* Styling for navigation links */
+nav > a {
+  text-decoration: none;
+  background-color: var(rgb(156, 28, 135));
+  color: rgb(0, 0, 0);
+  padding: 0.25em;
+  border-radius: 0.53em;
+  font-size: 18px;
+}
+
+/* Hover effect for navigation links */
+nav > a:hover {
+  background-color: var(--blue2);
+}
+
+/* Styling for the navigation bar */
+nav {
+  width: 100%;
+  max-height: 0.5vh;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: var(--blue1);
+  height: auto; 
+  min-height: 15vh; 
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Styling for the navigation logo */
+.nav-logo {
+  margin-right: auto; 
+}
+
+/* Styling for the navigation logo image */
+.nav-logo img {
+  max-width: 50px; 
+  height: auto; 
+}
+
+/* Styling for the 'resumelink' div */
+.resumelink {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the 'simple-button' class */
+.simple-button {
+  color: rgb(152, 228, 252);
+  border: 0;
+  font-size: 18px;
+  outline: none;
+  padding: 10px 20px; 
+  background-color: #ace; 
+  border-radius: 5px; 
+  text-shadow: 0 -0.056em 0 rgba(0,0,0,.3);
+  box-shadow: 0 0.22em 0 #9cb8d8, 0 0.167em 1.11em rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+/* Hover effect for the 'simple-button' class */
 .simple-button:hover {
-    background-color: #94d0e1; /* Change background color on hover */
+  background-color: #94d0e1; 
 }
 
+/* Active effect for the 'simple-button' class */
 .simple-button:active {
-    text-shadow: 0 -0.056em 0 rgba(0,0,0,.1);
-    box-shadow: 0 0 0.556em rgba(0, 0, 0, 0.5) inset;
-    position: relative;
-    top: 1px; /* Add slight upward shift on click for a pressed effect */
+  text-shadow: 0 -0.056em 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 0.556em rgba(0, 0, 0, 0.5) inset;
+  position: relative;
+  top: 1px; 
 }
-
-  
