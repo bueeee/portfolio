@@ -1,0 +1,37 @@
+.simple-button {
+    color: rgb(0, 0, 0);
+    border: 0;
+    font-size: 18px;
+    outline: none;
+    padding: 0.278em 0.556em;
+    background: #ace;
+    border-radius: 0.22em;
+    text-shadow: 0 -0.056em 0 rgba(0,0,0,.3);
+    box-shadow: 0 0.22em 0 #9cb8d8, 0 0.167em 1.11em rgba(0,0,0,0.3);
+    cursor: pointer;
+  }
+  
+  .simple-button:active {
+    text-shadow: 0 -0.056em 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 0.556em rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+    top: 0.167em;
+  }
+  
+  .simple-button {
+    margin-left: 30px;
+  }
+  
+  .simple-button-md {
+    font-size: 30px;
+  }
+  
+  .simple-button-lg {
+    font-size: 50px;
+  }
+  .resumelink {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      padding-right: 30px;
+  }

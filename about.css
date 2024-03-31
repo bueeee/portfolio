@@ -107,3 +107,29 @@
     display: flex;
     justify-content: center;
   }
+  .simple-button {
+    color: rgb(152, 228, 252);
+    border: 0;
+    font-size: 18px;
+    outline: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #ace; /* Set your desired background color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-shadow: 0 -0.056em 0 rgba(0,0,0,.3);
+    box-shadow: 0 0.22em 0 #9cb8d8, 0 0.167em 1.11em rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.simple-button:hover {
+    background-color: #94d0e1; /* Change background color on hover */
+}
+
+.simple-button:active {
+    text-shadow: 0 -0.056em 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 0.556em rgba(0, 0, 0, 0.5) inset;
+    position: relative;
+    top: 1px; /* Add slight upward shift on click for a pressed effect */
+}
+
+  
